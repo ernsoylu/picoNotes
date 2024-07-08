@@ -1,0 +1,3 @@
+/Users/erensoylu/Documents/git/picoNotes/basics/build/pioasm/CMakeFiles/pioasm.dir
+/Users/erensoylu/Documents/git/picoNotes/basics/build/pioasm/CMakeFiles/edit_cache.dir
+/Users/erensoylu/Documents/git/picoNotes/basics/build/pioasm/CMakeFiles/rebuild_cache.dir

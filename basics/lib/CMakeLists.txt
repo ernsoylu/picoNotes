@@ -1,1 +1,1 @@
-add_subdirectory(sendMessage)
+add_subdirectory(sendHello)
