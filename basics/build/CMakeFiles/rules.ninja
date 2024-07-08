@@ -78,6 +78,25 @@ rule ASM_EXECUTABLE_LINKER__bs2_default_Debug
 
 
 #############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__sendHello_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}/Users/erensoylu/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C static library.
+
+rule C_STATIC_LIBRARY_LINKER__sendHello_Debug
+  command = $PRE_LINK && /Users/erensoylu/.pico-sdk/cmake/v3.28.6/CMake.app/Contents/bin/cmake -E rm -f $TARGET_FILE && /Users/erensoylu/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-ar qc $TARGET_FILE $LINK_FLAGS $in && /Users/erensoylu/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-ranlib $TARGET_FILE && /Users/erensoylu/.pico-sdk/cmake/v3.28.6/CMake.app/Contents/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
+  description = Linking C static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE

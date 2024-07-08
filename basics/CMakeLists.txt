@@ -39,7 +39,7 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(basics basics.c sendHello.c)
+add_executable(basics basics.c)
 
 pico_set_program_name(basics "basics")
 pico_set_program_version(basics "0.1")
@@ -48,9 +48,11 @@ pico_set_program_version(basics "0.1")
 pico_enable_stdio_uart(basics 0)
 pico_enable_stdio_usb(basics 1)
 
+add_subdirectory(lib)
 # Add the standard library to the build
 target_link_libraries(basics
         pico_stdlib
+        sendHello
         )
 
 # Add the standard include files to the build

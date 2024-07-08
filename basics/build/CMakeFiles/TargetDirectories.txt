@@ -167,3 +167,8 @@
 /Users/erensoylu/Documents/git/picoNotes/basics/build/pico-sdk/src/rp2040/hardware_structs/CMakeFiles/rebuild_cache.dir
 /Users/erensoylu/Documents/git/picoNotes/basics/build/pico-sdk/docs/CMakeFiles/edit_cache.dir
 /Users/erensoylu/Documents/git/picoNotes/basics/build/pico-sdk/docs/CMakeFiles/rebuild_cache.dir
+/Users/erensoylu/Documents/git/picoNotes/basics/build/lib/CMakeFiles/edit_cache.dir
+/Users/erensoylu/Documents/git/picoNotes/basics/build/lib/CMakeFiles/rebuild_cache.dir
+/Users/erensoylu/Documents/git/picoNotes/basics/build/lib/sendHello/CMakeFiles/sendHello.dir
+/Users/erensoylu/Documents/git/picoNotes/basics/build/lib/sendHello/CMakeFiles/edit_cache.dir
+/Users/erensoylu/Documents/git/picoNotes/basics/build/lib/sendHello/CMakeFiles/rebuild_cache.dir

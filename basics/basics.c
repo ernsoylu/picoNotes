@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
-#include "sendHello.h"
+#include "lib/sendHello/sendHello.h"
 
 
 int main()
